@@ -72,7 +72,7 @@ if ( ! function_exists( 'mb_setup' ) ) {
     ) );
 
     // Register theme styles.
-    wp_register_style( 'mb-styles', get_template_directory_uri() . '/style.css', array(), $version );
+    wp_register_style( 'mb-styles', get_template_directory_uri() . '/style.css', array() );
 
     // Enqueue theme styles.
     wp_enqueue_style( 'mb-styles' );        
