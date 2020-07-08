@@ -7,7 +7,6 @@
 
 ?>
 <!-- close the main site container -->
-</div> <!-- class="site-container" -->
 </main> <!-- class="site-wrap -->
 
 

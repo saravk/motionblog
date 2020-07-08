@@ -23,8 +23,8 @@
       <?php the_content();?>
     </div>
   </section>
-  <?php get_template_part( 'template-parts/post-author' );?>  
-  <section class="post-prevnext">
-    <span class="prev"><?php previous_post_link(); ?></span><span class="next"><?php next_post_link(); ?></span>
-  </section>  
 </article>
+<?php get_template_part( 'template-parts/post-author' );?>  
+<section class="post-prevnext">
+  <span class="prev"><?php previous_post_link(); ?></span><span class="next"><?php next_post_link(); ?></span>
+</section>  

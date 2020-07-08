@@ -74,5 +74,4 @@
   </div>  
 </header><!-- #masthead .site-header -->
 
-<main class="site-wrap cfix"><!-- start the page containter -->
-  <div class="site-container">
+<main class="site-wrap"><!-- start the page containter -->

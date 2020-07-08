@@ -369,9 +369,8 @@ html:before {background-color: #000;display: none;opacity: calc(30 * 0.01); }
 html {position: relative; }
 html:before {content: '';height: 100%;left: 0;position: fixed;top: 0;width: 100%; }
 
-.site-container {float: none;margin-left: auto;margin-right: auto;max-width: 1600px; }
+
 .site-wrap, .site-container {position: relative;width: 100%; }
-.site-wrap:before {content: '';height: 100%;left: 0;position: absolute;top: 0;width: 100%; }
 .site-header {position: relative; }
 .responsive-nav {display: none;opacity: 0;visibility: hidden; }
 .logo-image, .logo-secondary-image {width: 100%; }
@@ -572,14 +571,14 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 
 .post-page {padding: 50px 0;width: 90%;margin:0 auto;}
 .post-content figcaption {color: #a8a6a1;font-size: 12px;text-align: center; }
-.post-page .post-header, .post-content p, .post-prevnext, .post-author-container, .page-author-container, .post-comments {max-width: 800px;margin: 0 auto;display: block;font-size: 18px;line-height: 1.5em;}
+.post-page .post-header, .post-content p, .post-prevnext, .page-author-container, .post-author-content, .post-comments {max-width: 800px;margin: 0 auto;display: block;font-size: 18px;line-height: 1.5em;}
 .post-page .post-header {padding-bottom: 20px;}
 .post-prevnext {padding: 30px 0;font-weight: bold;}
 .post-prevnext .prev {float: left;}
 .post-prevnext .next {float: right;}
 
 .page-author-container {text-align: center;padding-top: 30px;}
-.post-author-container {background: #f7f7f7;padding: 40px 0;margin: 40px auto;}
+.post-author-container {background: #f7f7f7;padding: 40px 0;margin: 40px auto;width: 100%}
 .post-author-content {display: flex;}
 .post-meta-section a, .post-author-content a {color: cadetblue;}
 .post-meta-section a:hover, .post-author-content a:hover {color: #FFC400;}
@@ -600,7 +599,7 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
   .post-more-link {margin-top: 5px;}
   .post-page {padding: 30px 0;width: 100%;}
   .wp-block-image {width: 100%;margin: 20px 0;}
-  .post-page .post-header, .post-content p, .post-prevnext, .post-author-container, .post-comments {max-width: 90%;margin: 0 auto;display: block;font-size: 18px;}
+  .post-page .post-header, .post-content p, .post-prevnext, .post-author-content, .post-comments {max-width: 90%;margin: 0 auto;display: block;font-size: 18px;}
   .post-prevnext .prev {display: none;}
   .post-prevnext .next {float: none;}
   .post-author-container {margin: 40px auto;}
