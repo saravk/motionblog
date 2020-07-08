@@ -66,8 +66,8 @@ if ( ! function_exists( 'mb_setup' ) ) {
 
     // Add support for core custom logo.
     add_theme_support( 'custom-logo', array(
-      'height'      => 60,
-      'width'       => 60,
+      'height'      => 512,
+      'width'       => 512,
       'flex-width'  => true,
     ) );
 
