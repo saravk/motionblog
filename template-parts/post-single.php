@@ -15,16 +15,16 @@
       <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
     </h1>
     <div class="post-meta-section">
-      <?php echo get_the_date(); ?>
+      By <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID')))?>" rel="author"><?php the_author_meta( 'display_name', $author_id ); ?></a> | <?php echo get_the_date(); ?>
     </div>    
   </section>
   <section class="post-content">
     <div class="post-content-text">
-        <?php the_content();?>
+      <?php the_content();?>
     </div>
   </section>
+  <?php get_template_part( 'template-parts/post-author' );?>  
   <section class="post-prevnext">
     <span class="prev"><?php previous_post_link(); ?></span><span class="next"><?php next_post_link(); ?></span>
-  </section>
-  <?php get_template_part( 'template-parts/post-author' );?>
+  </section>  
 </article>

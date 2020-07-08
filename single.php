@@ -9,6 +9,7 @@
 get_header();
 
 $post_id = $post->ID;
+$author_id  = $post->post_author;
 $post_sidebar = get_post_meta( $post_id, 'vs_singular_sidebar', true );
 if ( ! $post_sidebar || 'default' === $post_sidebar ) {
   $post_sidebar = get_theme_mod( 'post_sidebar', 'right' );

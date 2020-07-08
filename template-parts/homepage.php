@@ -4,9 +4,6 @@
  *
  * @package Neblue
  */
-
-
-get_template_part( 'template-parts/featured-slider' );
 ?>
 
 <div class="post-list-container">
