@@ -557,6 +557,7 @@ nav ul > li:first-of-type a {font-weight: 700;}
 .post-list-container {width: 100%;padding-left: 6vw;padding-right: 6vw;text-align: left;padding-top: 100px;}
 .post-list-container .post-item {display:flex; align-items: flex-start;width: 100%;position: relative;margin-bottom: 100px;transition: opacity 1s ease,transform 1s ease;}
 .post-list-container .post-image-wrapper {width: 55%;margin-right: 5%;margin-bottom: 0;}
+.post-image-wrapper img {max-width: 100%;}
 .post-list-container .post-item-summary {width:40%;}
 .post-meta-section {color:#a8a6a1;font-size: 12px;padding-bottom: 10px;}
 .post-list-container .post-excerpt {margin: 1rem 0;}
@@ -571,6 +572,7 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 
 .post-page {padding: 50px 0;width: 90%;margin:0 auto;}
 .post-content figcaption {color: #a8a6a1;font-size: 12px;text-align: center; }
+.post-content-text p {padding-bottom: 18px;}
 .post-page .post-header, .post-content p, .post-prevnext, .page-author-container, .post-author-content, .post-comments {max-width: 800px;margin: 0 auto;display: block;font-size: 18px;line-height: 1.5em;}
 .post-page .post-header {padding-bottom: 20px;}
 .post-prevnext {padding: 30px 0;font-weight: bold;}
