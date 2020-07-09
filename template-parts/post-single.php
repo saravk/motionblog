@@ -11,7 +11,7 @@
     <div class="post-category">
       <?php echo get_the_category_list(); ?>
     </div>
-    <h1 class="post-title">
+    <h1>
       <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
     </h1>
     <div class="post-meta-section">

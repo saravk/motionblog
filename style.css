@@ -106,7 +106,9 @@ dfn {
    * Address variable `h1` font-size and margin within `section` and `article`
    * contexts in Firefox 4+, Safari, and Chrome.
    */
-h1 {font-size: 2em;margin: 0.5em 0; }
+h1 {font-size: 2.5em;margin: 0.5em 0; }
+h2 {font-size: 1.6em;margin: 0.5em 0; }
+h3 {font-size: 1.2em;margin: 0.5em 0; }
 
 /**
    * Address styling not present in IE 8/9.
@@ -572,8 +574,8 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 
 .post-page {padding: 50px 0;width: 90%;margin:0 auto;}
 .post-content figcaption {color: #a8a6a1;font-size: 12px;text-align: center; }
-.post-content-text p {padding-bottom: 18px;color: #313131;}
-.post-page .post-header, .post-content p, .post-prevnext, .page-author-container, .post-author-content, .post-comments, .post-content h2, .post-content h3 {max-width: 800px;margin: 0 auto;display: block;font-size: 18px;line-height: 1.5em;}
+.post-page .post-header, .post-content p, .post-prevnext, .page-author-container, .post-author-content, .post-comments, .post-content h2, .post-content h3 {max-width: 800px;margin-left: auto;margin-right:auto;display: block;}
+.post-content-text p {padding-bottom: 18px;color: #313131;font-size: 18px;line-height: 1.5em;}
 .post-page .post-header {padding-bottom: 20px;}
 .post-prevnext {padding: 30px 0;font-weight: bold;}
 .post-prevnext .prev {float: left;}
