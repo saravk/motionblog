@@ -572,7 +572,7 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 
 .post-page {padding: 50px 0;width: 90%;margin:0 auto;}
 .post-content figcaption {color: #a8a6a1;font-size: 12px;text-align: center; }
-.post-content-text p {padding-bottom: 18px;}
+.post-content-text p {padding-bottom: 18px;color: #313131;}
 .post-page .post-header, .post-content p, .post-prevnext, .page-author-container, .post-author-content, .post-comments, .post-content h2, .post-content h3 {max-width: 800px;margin: 0 auto;display: block;font-size: 18px;line-height: 1.5em;}
 .post-page .post-header {padding-bottom: 20px;}
 .post-prevnext {padding: 30px 0;font-weight: bold;}
