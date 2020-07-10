@@ -55,8 +55,6 @@ $discussion = mb_get_discussion_data();
 
     // Show comment navigation.
     if ( have_comments() ) {
-      $prev_icon     = mb_get_icon_svg( 'chevron_left', 22 );
-      $next_icon     = mb_get_icon_svg( 'chevron_right', 22 );
       $comments_text = __( 'Comments', 'twentynineteen' );
       the_comments_navigation(
         array(

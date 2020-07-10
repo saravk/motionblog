@@ -88,10 +88,6 @@ if ( ! function_exists( 'mb_setup' ) ) {
 add_action( 'after_setup_theme', 'mb_setup' );
 add_action( 'wp_enqueue_scripts', 'mb_custom_scripts' );
 
-/**
- * SVG Icons class.
- */
-require get_template_directory() . '/classes/class-mb-svg-icons.php';
 
 /**
  * Custom Comment Walker template.
@@ -116,8 +112,4 @@ require get_template_directory() . '/inc/template-functions.php';
 
 //Theme helper functions.
 require get_template_directory() . '/inc/helper-functions.php';
-
-
-//SVG Icons related functions.
-require get_template_directory() . '/inc/icon-functions.php';
 
