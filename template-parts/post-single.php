@@ -14,9 +14,7 @@
     <h1>
       <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
     </h1>
-    <div class="post-meta-section">
-      By <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID')))?>" rel="author"><?php the_author_meta( 'display_name', get_the_author_meta('ID')); ?></a> | <?php echo get_the_date(); ?>
-    </div>    
+    <?php get_template_part( 'template-parts/post-meta' );?>  
   </section>
   <section class="post-content">
     <div class="post-content-text">

@@ -565,7 +565,6 @@ nav.pagination .page-numbers {border:1px solid #FFC400;padding:5px 12px;margin: 
 nav.pagination .page-numbers:hover, nav.pagination .page-numbers.next, nav.pagination .page-numbers.prev {background: #FFC400;color: #fff;}
 nav.pagination .page-numbers.current {border:1px solid #a8a6a1;}
 nav.pagination .page-numbers.current:hover {background: transparent;color: #111;}
-
 .post-page {padding: 50px 0;width: 90%;margin:0 auto;}
 .post-content figcaption {color: #a8a6a1;font-size: 14px;text-align: center; margin: 0 auto;padding-bottom: 20px;}
 .post-page .post-header, .post-content p, .post-prevnext, .page-author-container, .post-author-content, .post-comments, .post-content h2, .post-content h3 {max-width: 800px;margin-left: auto;margin-right:auto;display: block;}
@@ -579,8 +578,11 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 .page-author-container {text-align: center;padding-top: 30px;}
 .post-author-container {background: #f7f7f7;padding: 40px 0;margin: 40px auto;width: 100%}
 .post-author-content {display: flex;}
-.post-meta-section a, .post-author-content a {color: cadetblue;}
+.post-meta-section a, .post-author-content a {color: cadetblue;font-weight: bold;}
 .post-meta-section a:hover, .post-author-content a:hover {color: #FFC400;}
+.label {display: inline;padding: .2em .6em .3em;font-size: 85%;font-weight: 700;color: #fff;line-height: 1;color: #fff;text-align: center;white-space: nowrap;vertical-align: baseline;border-radius: .25em;}
+.label-featured {background: #FFC400;}
+.label-new {background: #5cb85c;}
 .author-avatar, .author-data {padding: 0 20px;}
 .author-avatar img {border-radius: 10px;}
 .author-name {font-weight: bold;padding-bottom: 10px;}
