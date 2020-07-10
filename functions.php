@@ -8,6 +8,16 @@
 define( 'MOTIONBLOG_VERSION', 1.0 );
 
 
+if ( ! function_exists( 'mb_custom_scripts' ) ) {
+  function mb_custom_scripts() {
+      // Register theme styles.
+    wp_register_style( 'mb-styles', get_template_directory_uri() . '/style.css', array() );
+
+    // Enqueue theme styles.
+    wp_enqueue_style( 'mb-styles' );  
+  }
+}
+
 if ( ! function_exists( 'mb_setup' ) ) {
   /**
    * Sets up theme defaults and registers support for various WordPress features.
@@ -69,19 +79,24 @@ if ( ! function_exists( 'mb_setup' ) ) {
       'height'      => 512,
       'width'       => 512,
       'flex-width'  => true,
-    ) );
-
-    // Register theme styles.
-    wp_register_style( 'mb-styles', get_template_directory_uri() . '/style.css', array() );
-
-    // Enqueue theme styles.
-    wp_enqueue_style( 'mb-styles' );        
+    ) );      
 
     // Enqueue theme styles.
     add_image_size( 'square', 600, 600, true ); // (cropped)
   }
 }
 add_action( 'after_setup_theme', 'mb_setup' );
+add_action( 'wp_enqueue_scripts', 'mb_custom_scripts' );
+
+/**
+ * SVG Icons class.
+ */
+require get_template_directory() . '/classes/class-mb-svg-icons.php';
+
+/**
+ * Custom Comment Walker template.
+ */
+require get_template_directory() . '/classes/class-mb-walker-comment.php';
 
 
 // Customizer functions
@@ -95,3 +110,14 @@ require get_template_directory() . '/inc/featured-posts.php';
 
 // Social links
 require get_template_directory() . '/inc/social-links.php';
+
+//Theme helper functions.
+require get_template_directory() . '/inc/template-functions.php';
+
+//Theme helper functions.
+require get_template_directory() . '/inc/helper-functions.php';
+
+
+//SVG Icons related functions.
+require get_template_directory() . '/inc/icon-functions.php';
+

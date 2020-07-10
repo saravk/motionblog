@@ -15,7 +15,7 @@
       <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
     </h1>
     <div class="post-meta-section">
-      By <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID')))?>" rel="author"><?php the_author_meta( 'display_name', $author_id ); ?></a> | <?php echo get_the_date(); ?>
+      By <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID')))?>" rel="author"><?php the_author_meta( 'display_name', get_the_author_meta('ID')); ?></a> | <?php echo get_the_date(); ?>
     </div>    
   </section>
   <section class="post-content">
@@ -25,6 +25,13 @@
   </section>
 </article>
 <?php get_template_part( 'template-parts/post-author' );?>  
-<section class="post-prevnext">
+<section class="post-comments">
+<?php    
+    if ( comments_open() || get_comments_number() ) {
+      comments_template();
+    }
+?>        
+</section>
+<!-- <section class="post-prevnext">
   <span class="prev"><?php previous_post_link(); ?></span><span class="next"><?php next_post_link(); ?></span>
-</section>  
+</section> -->  

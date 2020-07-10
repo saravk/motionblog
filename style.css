@@ -567,21 +567,23 @@ nav.pagination .page-numbers.current {border:1px solid #a8a6a1;}
 nav.pagination .page-numbers.current:hover {background: transparent;color: #111;}
 
 .post-page {padding: 50px 0;width: 90%;margin:0 auto;}
-.post-content figcaption {color: #a8a6a1;font-size: 12px;text-align: center; }
+.post-content figcaption {color: #a8a6a1;font-size: 14px;text-align: center; margin: 0 auto;padding-bottom: 20px;}
 .post-page .post-header, .post-content p, .post-prevnext, .page-author-container, .post-author-content, .post-comments, .post-content h2, .post-content h3 {max-width: 800px;margin-left: auto;margin-right:auto;display: block;}
+.post-content h2 {font-size: 2em;margin-bottom: 1em;}
 .post-content-text p {padding-bottom: 18px;font-size: 18px;line-height: 1.5em;}
 .post-page .post-header {padding-bottom: 20px;}
 .post-prevnext {padding: 30px 0;font-weight: bold;}
 .post-prevnext .prev {float: left;}
 .post-prevnext .next {float: right;}
-
+.post-header h1 {margin-top: 3px;}
 .page-author-container {text-align: center;padding-top: 30px;}
 .post-author-container {background: #f7f7f7;padding: 40px 0;margin: 40px auto;width: 100%}
 .post-author-content {display: flex;}
 .post-meta-section a, .post-author-content a {color: cadetblue;}
 .post-meta-section a:hover, .post-author-content a:hover {color: #FFC400;}
 .author-avatar, .author-data {padding: 0 20px;}
-.author-description {padding-top: 10px;font-size: 15px;color: #444;}
+.author-avatar img {border-radius: 10px;}
+.author-name {font-weight: bold;padding-bottom: 10px;}
 .author-social-links {padding-top: 5px;}
 .author-social-links svg {fill: cadetblue;height: 24px;opacity: 1;width: 24px;vertical-align: middle;display: inline-block;}
 .author-social-links a {color: cadetblue;font-size: 15px;padding-right: 5px;vertical-align: middle;display: inline-block;}
@@ -610,3 +612,56 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 .featured-slider-item amp-img {  object-fit: cover;width:350px;height:350px;}
 .featured-item-content {padding: 10px 20px;overflow: hidden;}
 .featured-item-content h3 {margin: 5px 0;}
+
+
+/*
+  COMMENTS
+*/
+
+ol.comment-list {margin-bottom: 1.5em;}
+.comment-list > .comment:first-child {padding-top: 0;margin-top: 0;border-top: 0;}
+.comment, .comment-list {list-style-type: none;padding: 0;margin: 0;margin-bottom: 0px;}
+.comment-body {padding: 30px 0;}
+
+.comment-meta .avatar {float: left;margin-right: 10px;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;height: 50px;}
+.comment-author-info {display: inline-block;vertical-align: middle;}
+.comment-metadata, .comment-notes {margin-top: 0;font-size: 12px;color: #878787;}
+.comment-content {padding: 30px;border: 1px solid rgba(0,0,0,.05);background: #fafafa;margin-top: 2px;}
+.comment-reply-link, .comment-edit-link, #cancel-comment-reply-link, .comment-navigation a {color: cadetblue;}
+.comment-awaiting-moderation {color: red;}
+.comment-reply {font-size: 14px;padding-top: 10px;}
+#cancel-comment-reply-link {padding-left: 10px;font-weight: normal;}
+.depth-1.parent > .children {border-bottom: 1px solid rgba(0,0,0,.05);}
+.comment .children {padding-left: 30px;margin-top: -30px;border-left: 1px solid rgba(0,0,0,.05);
+li > ul, li > ol {margin-bottom: 0;margin-left: 1.5em;}
+
+.no-comments {color: maroon;font-weight: bold;text-align: center;}
+.comments-title {text-align: center;}
+.comments-title .comment-count {color: cadetblue;}
+.comment-notes {padding-bottom: 20px;}
+.comment-form-author {width: 50%;float: left;padding-right: 10px;}
+.comment-form-email {width: 50%;float: left;padding-left: 10px;}
+.comment-form-cookies-consent {padding-bottom: 25px;font-size: 13px;}
+.logged-in-as {padding-bottom: 10px;}
+.logged-in-as a:nth-of-type(2) {color: cadetblue;}
+.comment-author-sup {background: #FFC400;color: #fff;font-size:10px;padding: 0px 3px 2px 3px;border-radius: 3px;}
+.comment-navigation {padding-bottom: 40px;text-align: right;font-weight: bold;}
+.comment-navigation .nav-previous {text-align: left;}
+
+.comment-form input, .comment-form-comment {margin-bottom: 10px;}
+.screen-reader-text, .screen-reader-text span, .screen-reader-shortcut, .comment-form-comment label  {position: absolute !important;clip: rect(0,0,0,0);height: 1px;width: 1px;border: 0;overflow: hidden;}
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="number"], textarea, select {color: #666;
+background: #fff; background-image: none;background-image: -webkit-linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0));border: 1px solid #bbb;
+-webkit-border-radius: 3px;border-radius: 3px;display: block;padding: .7em;width: 100%}
+
+.form-submit {text-align: right;padding:15px 0 30px 0;}
+input[name="submit"] {display: inline-block;font-weight: 400;text-align: center;white-space: nowrap;vertical-align: middle;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;border: 1px solid transparent;border-top-color: transparent;border-right-color: transparent;border-bottom-color: transparent;border-left-color: transparent;padding: .375rem .75rem;font-size: 1rem;line-height: 1.5;border-radius: .25rem;transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;color: #fff;background-color: cadetblue;border-color: cadetblue;}
+input[name="submit"]:hover {background-color: #2b8080;}
+
+@media (max-width: 768px) {
+  .comment-form-author, .comment-form-email {width: 100%;float: none;padding-right: 0;padding-left: 0;}
+}
+
+/*
+  END COMMENTS
+*/

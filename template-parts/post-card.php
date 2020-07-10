@@ -20,7 +20,7 @@
         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
       </h2>
       <div class="post-meta-section">
-        By <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>" rel="author"><?php the_author_meta( 'nickname', $author_id ); ?></a> | <?php echo get_the_date(); ?>
+        By <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>" rel="author"><?php the_author_meta( 'nickname', get_the_author_meta('ID') ); ?></a> | <?php echo get_the_date(); ?>
       </div>
       <div class="post-excerpt">
         <?php echo wp_kses( get_the_excerpt(), 'post' ); ?>
