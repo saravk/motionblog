@@ -618,7 +618,7 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 .featured-slider-item {width: 350px;height:430px;background: #fff;margin: 10px 0 10px 10px;overflow: hidden;}
 .featured-slider-item amp-img {  object-fit: cover;width:350px;height:350px;}
 .featured-item-content {padding: 10px 20px;overflow: hidden;background: #000;}
-.featured-item-content h3 {margin: 5px 0;}
+.featured-item-content h3 {margin: 5px 0;font-size: 1em;text-transform: uppercase;}
 .featured-item-content h3 a {color: #f1f1f1;}
 
 /*Post Cover*/
