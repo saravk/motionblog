@@ -614,11 +614,12 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
   .post-author-content img {max-height: 80px;margin-bottom: 20px;}
 }
 
-.featured-slider-container {background: #eaeaea;}
+.featured-slider-container {background: #f1f1f1;}
 .featured-slider-item {width: 350px;height:430px;background: #fff;margin: 10px 0 10px 10px;overflow: hidden;}
 .featured-slider-item amp-img {  object-fit: cover;width:350px;height:350px;}
-.featured-item-content {padding: 10px 20px;overflow: hidden;}
+.featured-item-content {padding: 10px 20px;overflow: hidden;background: #000;}
 .featured-item-content h3 {margin: 5px 0;}
+.featured-item-content h3 a {color: #f1f1f1;}
 
 /*Post Cover*/
 .panel-cover {width: 100%;position: relative;height: auto;}
