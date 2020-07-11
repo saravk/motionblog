@@ -486,13 +486,11 @@ nav ul > li:first-of-type a {font-weight: 700;}
 @media (max-width: 768px) {
   .site-header nav {display: none;padding: 0;width: 100%; }
   .site-header {padding-left: 5%;padding-right: 5%; }
-  /*
   .logo-wrap {max-width: 100%;padding: 0;width: 100%; }
   .logo {max-width: 100%;padding: 0 39px 0 0; }
   .logo-image {padding-left: 39px;margin-bottom: -5px;margin-top: -5px; }
   .logo-image img {max-height: 80px; }
   .logo-text {padding-left: 39px; }
-*/
   .logo-secondary {display: none; }
   .close-responsive-button {top: 40px; }
   .hamburger-click-area {display: block; }
