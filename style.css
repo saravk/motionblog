@@ -624,8 +624,8 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 .panel-cover .post-meta-section {color: #fff;}
 .panel-cover .post-meta-section a {color: #FFC400;}
 .panel-cover img {width: 100%;height: 90vh;object-fit: cover;}
-.wp-block-cover__inner-container {padding:40px 20px 0 20px;}
-.wp-block-cover__inner-container h2 {display: inline-block;text-transform: uppercase; font-size: 3em;padding-bottom: 5px;border-bottom: 3px solid;}
+.wp-block-cover__inner-container {padding:40px;}
+.wp-block-cover__inner-container h2 {display: inline-block;text-transform: uppercase; font-size: 3em;padding-bottom: 5px;border-bottom: 3px solid ;margin-bottom: 10px;}
 
 @media (max-width: 768px) {
   .panel-cover img, .panel-cover-header, .panel-cover-shade {height: 450px;}

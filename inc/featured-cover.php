@@ -20,6 +20,18 @@ function mb_featured_cover_meta_callback( $post ) {
         <?php _e( 'Use Featured Image as Cover' )?>
       </label>
     </div>
+    <div class="clearfix" style="padding-top: 20px;">
+      <label for="featured-cover-blurb">
+<?php 
+        $blurb = '';
+        if (isset($featured['featured-cover-blurb'])) {
+          $blurb = $featured['featured-cover-blurb'][0];
+        } 
+?>        
+        <div><?php _e( 'Blurb for Featured Cover' )?></div>        
+        <input type="text" name="featured-cover-blurb" id="featured-cover-blurb" value="<?php _e($blurb) ?>" />
+      </label>
+    </div>    
   </p>
   <?php
 }
@@ -46,5 +58,12 @@ function mb_save_featured_cover_meta( $post_id ) {
   } else {
       update_post_meta( $post_id, 'featured-cover-checkbox', '' );
   }
+
+  // Checks for input and saves
+  if( isset( $_POST[ 'featured-cover-blurb' ] ) ) {
+      update_post_meta( $post_id, 'featured-cover-blurb', $_POST[ 'featured-cover-blurb' ] );
+  } else {
+      update_post_meta( $post_id, 'featured-cover-blurb', '' );
+  }  
 }
 add_action( 'save_post', 'mb_save_featured_cover_meta' );

@@ -11,8 +11,15 @@
   <div class="panel-cover-shade"></div>
   <div class="panel-cover-header">
     <h1><?php the_title(); ?></h1>
-    <div class="blurb">
-    </div>
+<?php 
+    if (get_post_meta($post->ID, 'featured-cover-blurb', true) != '') {
+?>
+      <div class="blurb">
+        <?php _e(get_post_meta($post->ID, 'featured-cover-blurb', true))?>
+      </div>
+<?php      
+    }
+?>    
     <?php get_template_part( 'template-parts/post-meta' );?>
   </div>
   </div>
