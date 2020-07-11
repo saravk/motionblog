@@ -48,6 +48,7 @@
 <?php get_template_part( 'template-parts/header-responsive' );?>
 
 <header id="siteheader" class="site-header">
+  <?php get_template_part( 'template-parts/header-scrolltop' );?>  
   <nav class="nav-container">
     <?php wp_nav_menu( array('menu_class' => 'navbar-nav', 'theme_location'  => 'primary', 'container' => '', 'container_class' => '',));// Display the user-defined menu in Appearance > Menus ?>
   </nav>
