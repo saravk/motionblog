@@ -569,7 +569,7 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 .post-content {padding-top: 40px;}
 .post-content figcaption {color: #a8a6a1;font-size: 14px;text-align: center; margin: 0 auto;padding-bottom: 20px;}
 .post-page .post-header, .post-content p, .post-prevnext, .page-author-container, .post-author-content, .post-comments, .post-content h2, .post-content h3 {max-width: 800px;margin-left: auto;margin-right:auto;display: block;}
-.post-content h2 {font-size: 2em;margin-bottom: 1em;}
+.post-content h2 {font-size: 2em;margin-bottom: 1em;text-transform: uppercase; }
 .post-content-text p {padding-bottom: 18px;font-size: 18px;line-height: 1.5em;}
 .post-page .post-header {padding-bottom: 20px;}
 .post-prevnext {padding: 30px 0;font-weight: bold;}
@@ -620,12 +620,13 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 .panel-cover {width: 100%;position: relative;height: auto;}
 .panel-cover-shade {position: absolute;z-index: 2;left: 0;top: 0;background-color: rgba(0, 0, 0, 0.35);width: 100%;height: 90vh;}
 .panel-cover-header {width: 100%;position: absolute;top: 0;left: 0;height: 90vh;z-index: 4;display: flex;align-items: center;-webkit-justify-content: center;justify-content: center;-webkit-flex-direction: column;flex-direction: column;align-self: center;color: white;text-align: center;z-index: 4;}
-.panel-cover-header h1 {font-size: 66px;padding-bottom: 10px;line-height: 1.3em;color: #fff;}
+.panel-cover-header h1 {font-size: 66px;padding-bottom: 10px;line-height: 1.3em;color: #fff;margin-bottom: 0;}
+.panel-cover-blurb {font-size: 24px;padding-bottom: 20px;}
 .panel-cover .post-meta-section {color: #fff;}
 .panel-cover .post-meta-section a {color: #FFC400;}
 .panel-cover img {width: 100%;height: 90vh;object-fit: cover;}
 .wp-block-cover__inner-container {padding:40px;}
-.wp-block-cover__inner-container h2 {display: inline-block;text-transform: uppercase; font-size: 3em;padding-bottom: 5px;border-bottom: 3px solid ;margin-bottom: 10px;}
+.wp-block-cover__inner-container h2 {display: inline-block;font-size: 3em;padding-bottom: 5px;border-bottom: 3px solid ;margin-bottom: 10px;}
 
 @media (max-width: 768px) {
   .panel-cover img, .panel-cover-header, .panel-cover-shade {height: 450px;}

@@ -14,7 +14,7 @@
 <?php 
     if (get_post_meta($post->ID, 'featured-cover-blurb', true) != '') {
 ?>
-      <div class="blurb">
+      <div class="panel-cover-blurb">
         <?php _e(get_post_meta($post->ID, 'featured-cover-blurb', true))?>
       </div>
 <?php      
