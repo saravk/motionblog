@@ -17,7 +17,7 @@ html {
 /**
    * Remove default margin.
    */
-body {margin: 0; line-height: 1.4em;}
+body {margin: 0; line-height: 1.4em;max-width: 2400px;margin: 0 auto;}
 
 /* HTML5 display definitions
      ========================================================================== */
@@ -146,14 +146,6 @@ img {
    */
 svg:not(:root) {
   overflow: hidden; }
-
-/* Grouping content
-     ========================================================================== */
-/**
-   * Address margin not present in IE 8/9 and Safari.
-   */
-figure {
-  margin: 1em 40px; }
 
 /**
    * Address differences between Firefox and other browsers.
@@ -359,6 +351,7 @@ html,body {min-height: 100%; }
 .strikethrough {text-decoration: line-through; }
 .bold {font-weight: bold; }
 .clearfix:after {clear: both;content: ' ';display: block;height: 0;line-height: 0;overflow: hidden;visibility: hidden; }
+.nomargin {margin: 0;}
 
 html {background-color: #fff;background-image: url("");background-position: top left;background-repeat: no-repeat;background-size: contain; }
 html:before {background-color: #000;display: none;opacity: calc(30 * 0.01); }
@@ -565,7 +558,15 @@ nav.pagination .page-numbers {border:1px solid #FFC400;padding:5px 12px;margin: 
 nav.pagination .page-numbers:hover, nav.pagination .page-numbers.next, nav.pagination .page-numbers.prev {background: #FFC400;color: #fff;}
 nav.pagination .page-numbers.current {border:1px solid #a8a6a1;}
 nav.pagination .page-numbers.current:hover {background: transparent;color: #111;}
-.post-page {padding: 50px 0;width: 90%;margin:0 auto;}
+.post-page {/*padding: 50px 0;width: 90%;margin:0 auto;*/}
+.post-page figure {margin: 0;padding: 0;margin: 0 auto;}
+.wp-block-image, .wp-block-gallery, .wp-block-cover {max-width: 800px;margin: 0 auto;padding: 20px 0;}
+.wp-block-image.alignwide, .wp-block-gallery.alignwide, .wp-block-cover.alignwide {max-width: 1200px;margin: 30px auto;}
+.wp-block-image.alignfull, .wp-block-gallery.alignfull, .wp-block-cover.alignfull {max-width: 100%;margin: 40px auto;}
+.wp-block-cover {background-position: center;}
+.wp-block-gallery.nomargin .blocks-gallery-item{margin: 0;}
+
+.post-content {padding-top: 40px;}
 .post-content figcaption {color: #a8a6a1;font-size: 14px;text-align: center; margin: 0 auto;padding-bottom: 20px;}
 .post-page .post-header, .post-content p, .post-prevnext, .page-author-container, .post-author-content, .post-comments, .post-content h2, .post-content h3 {max-width: 800px;margin-left: auto;margin-right:auto;display: block;}
 .post-content h2 {font-size: 2em;margin-bottom: 1em;}
@@ -615,7 +616,23 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 .featured-item-content {padding: 10px 20px;overflow: hidden;}
 .featured-item-content h3 {margin: 5px 0;}
 
+/*Post Cover*/
+.panel-cover {width: 100%;position: relative;height: auto;}
+.panel-cover-shade {position: absolute;z-index: 2;left: 0;top: 0;background-color: rgba(0, 0, 0, 0.35);width: 100%;height: 90vh;}
+.panel-cover-header {width: 100%;position: absolute;top: 0;left: 0;height: 90vh;z-index: 4;display: flex;align-items: center;-webkit-justify-content: center;justify-content: center;-webkit-flex-direction: column;flex-direction: column;align-self: center;color: white;text-align: center;z-index: 4;}
+.panel-cover-header h1 {font-size: 66px;padding-bottom: 10px;line-height: 1.3em;color: #fff;}
+.panel-cover .post-meta-section {color: #fff;}
+.panel-cover .post-meta-section a {color: #FFC400;}
+.panel-cover img {width: 100%;height: 90vh;object-fit: cover;}
+.wp-block-cover__inner-container {padding:40px 20px 0 20px;}
+.wp-block-cover__inner-container h2 {display: inline-block;text-transform: uppercase; font-size: 3em;padding-bottom: 5px;border-bottom: 3px solid;}
 
+@media (max-width: 768px) {
+  .panel-cover img, .panel-cover-header, .panel-cover-shade {height: 450px;}
+  .panel-cover-header h1 {font-size: 40px;}
+  .wp-block-cover__inner-container p {display: none;}
+  .wp-block-cover__inner-container h2 {font-size: 2em;border-bottom: none;}
+}
 /*
   COMMENTS
 */

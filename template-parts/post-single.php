@@ -7,16 +7,24 @@
 ?>
 
 <article class="post-page">
-  <section class="post-header">
-    <div class="post-category">
-      <?php echo get_the_category_list(); ?>
-    </div>
-    <h1>
-      <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-    </h1>
-    <?php get_template_part( 'template-parts/post-meta' );?>  
-  </section>
-  <section class="post-content">
+<?php 
+  if ( has_post_thumbnail() && (get_post_meta($post->ID, 'featured-cover-checkbox', true) == 'yes')) { 
+?>
+    <?php get_template_part( 'template-parts/post-cover' );?>  
+<?php 
+  } else { 
+?>  
+    <section class="post-header">
+      <div class="post-category">
+        <?php echo get_the_category_list(); ?>
+      </div>
+      <h1><?php the_title(); ?></h1>
+      <?php get_template_part( 'template-parts/post-meta' );?>  
+    </section>
+<?php
+  }
+?>
+  <section class="post-content clearfix">
     <div class="post-content-text">
       <?php the_content();?>
     </div>

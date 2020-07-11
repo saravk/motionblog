@@ -1,4 +1,4 @@
-  <?php
+<?php
 /**
  * The template for displaying a Post's Summary in a Homepage
  *

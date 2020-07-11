@@ -104,6 +104,9 @@ require get_template_directory() . '/inc/sanitize.php';
 // Featured Posts
 require get_template_directory() . '/inc/featured-posts.php';
 
+// Featured Cover for Posts
+require get_template_directory() . '/inc/featured-cover.php';
+
 // Social links
 require get_template_directory() . '/inc/social-links.php';
 

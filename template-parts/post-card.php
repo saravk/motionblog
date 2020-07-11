@@ -7,7 +7,7 @@
 ?>
 <article class="post-item entry">
   <section class="post-image-wrapper">
-    <?php if ( get_theme_mod( 'homepage_preview_image', 1 ) && has_post_thumbnail() ) { ?>
+    <?php if ( has_post_thumbnail() ) { ?>
       <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium_large'); ?></a>
     <?php } ?>
   </section>
