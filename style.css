@@ -571,9 +571,9 @@ nav.pagination .page-numbers.current {border:1px solid #a8a6a1;}
 nav.pagination .page-numbers.current:hover {background: transparent;color: #111;}
 .post-page {/*padding: 50px 0;width: 90%;margin:0 auto;*/}
 .post-page figure {margin: 0;padding: 0;margin: 0 auto;}
-.wp-block-image, .wp-block-gallery, .wp-block-cover {max-width: 800px;margin: 0 auto;padding: 20px 0;}
-.wp-block-image.alignwide, .wp-block-gallery.alignwide, .wp-block-cover.alignwide {max-width: 1200px;margin: 30px auto;}
-.wp-block-image.alignfull, .wp-block-gallery.alignfull, .wp-block-cover.alignfull {max-width: 100%;margin: 40px auto;}
+.wp-block-image, .wp-block-gallery, .wp-block-cover, .wp-block-embed {max-width: 800px;margin: 0 auto;padding: 20px 0;}
+.wp-block-image.alignwide, .wp-block-gallery.alignwide, .wp-block-cover.alignwide, .wp-block-embed.alignwide {max-width: 1200px;margin: 30px auto;}
+.wp-block-image.alignfull, .wp-block-gallery.alignfull, .wp-block-cover.alignfull, .wp-block-embed.alignfull {max-width: 100%;margin: 40px auto;}
 .wp-block-cover {background-position: center;}
 .wp-block-gallery.zero-margin .blocks-gallery-item, .wp-block-image.alignfull.zero-margin, .wp-block-gallery.alignfull.zero-margin{margin: 0;}
 .wp-block-gallery.with-frame .blocks-gallery-item, .wp-block-image.alignfull.with-frame, .wp-block-gallery.alignfull.with-frame {margin: 0;}
@@ -619,7 +619,7 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
   .post-more-link {margin-top: 5px;}
   .post-content h2 {font-size: 1.5em;margin-bottom: 1em;}
   .post-page {width: 100%;}
-  .wp-block-image {width: 100%;margin: 20px 0;}
+  .wp-block-image, .wp-block-embed, .wp-block-gallery, .wp-block-cover {width: 100%;margin: 20px 0;}
   .post-page .post-header, .post-content p, .post-prevnext, .post-author-content, .post-comments, .post-content h2, .post-content h3 {max-width: 90%;margin-left: auto;margin-right:auto;display: block;}
   .post-prevnext .prev {display: none;}
   .post-prevnext .next {float: none;}
@@ -640,7 +640,7 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 .panel-cover-shade {position: absolute;z-index: 2;left: 0;top: 0;bottom:0;right:0;background-color: rgba(0, 0, 0, 0.35);}
 .panel-cover-header {position: absolute;top: 0;left: 0;bottom:0;right:0;z-index: 4;display: flex;align-items: center;-webkit-justify-content: center;justify-content: center;-webkit-flex-direction: column;flex-direction: column;align-self: center;color: white;text-align: center;z-index: 4;}
 .panel-cover-header h1 {font-size: 66px;padding-bottom: 10px;line-height: 1.3em;color: #fff;margin-bottom: 0;}
-.panel-cover-blurb {font-size: 24px;padding-bottom: 20px;}
+.panel-cover-blurb {font-size: 24px;padding-bottom: 20px;color: #bababa;}
 .panel-cover .post-meta-section {color: #fff;}
 .panel-cover .post-meta-section a {color: var(--color-primary);}
 .panel-cover img {width: 100%;object-fit: cover;}
@@ -652,7 +652,8 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
   .featured-slider-item amp-img {width: 95vw;height: 100vw;}
   .featured-item-content {position: absolute;bottom: 0;left: 0;width: 95vw;}*/
   .panel-cover img, .panel-cover-header, .panel-cover-shade {height: 450px;}
-  .panel-cover-header h1 {font-size: 40px;}
+  .panel-cover-header h1 {font-size: 32px;}
+  .panel-cover-blurb {font-size: 18px;}
   .wp-block-cover__inner-container p {display: none;}
   .wp-block-cover__inner-container h2 {font-size: 2em;border-bottom: none;}
 }
