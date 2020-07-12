@@ -361,6 +361,7 @@ html,body {min-height: 100%; }
 .bold {font-weight: bold; }
 .clearfix:after {clear: both;content: ' ';display: block;height: 0;line-height: 0;overflow: hidden;visibility: hidden; }
 .zero-margin {margin: 0;}
+.zero-margin {margin: 0;}
 
 html {background-color: #fff;background-image: url("");background-position: top left;background-repeat: no-repeat;background-size: contain; }
 html:before {background-color: #000;display: none;opacity: calc(30 * 0.01); }
@@ -574,6 +575,11 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 .wp-block-image.alignfull, .wp-block-gallery.alignfull, .wp-block-cover.alignfull {max-width: 100%;margin: 40px auto;}
 .wp-block-cover {background-position: center;}
 .wp-block-gallery.zero-margin .blocks-gallery-item, .wp-block-image.alignfull.zero-margin, .wp-block-gallery.alignfull.zero-margin{margin: 0;}
+.wp-block-gallery.with-frame .blocks-gallery-item, .wp-block-image.alignfull.with-frame, .wp-block-gallery.alignfull.with-frame {margin: 0;}
+.wp-block-gallery.with-frame .blocks-gallery-item {border:5px solid #fff;}
+.wp-block-image.alignfull.with-frame {border-left: 10px solid #fff;border-right: 10px solid #fff;border-top: 5px solid #fff;border-bottom: 5px solid #fff;}
+.wp-block-gallery.with-frame .blocks-gallery-item:first-of-type {border-left: 10px solid #fff;}
+.wp-block-gallery.with-frame .blocks-gallery-item:last-of-type {border-right: 10px solid #fff;}
 
 .post-content {padding-top: 40px;}
 .post-content figcaption {color: #a8a6a1;font-size: 14px;text-align: center; margin: 0 auto;padding-bottom: 20px;}
