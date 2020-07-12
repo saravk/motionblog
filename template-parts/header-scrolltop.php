@@ -25,23 +25,7 @@
     </script>
   </amp-animation>  
 <style amp-custom>
-  .scrollToTop {
-    color: var(--color-text-light);
-    font-size: 1.4em;
-    box-shadow: var(--box-shadow-1);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    background: var(--color-primary);
-    z-index: 9999;
-    bottom: var(--space-2);
-    right: var(--space-2);
-    position: fixed;
-    opacity: 0;
-    visibility: hidden;
-  }
+  .scrollToTop {color: var(--color-text-light);box-shadow: var(--box-shadow-1);font-size: 1.4em;width: 60px;height: 60px;border-radius: 50%;border: none;outline: none;background: var(--color-primary);z-index: 9999;bottom: var(--space-4);right: var(--space-4);position: fixed;opacity: 0;visibility: hidden;}
 .scrollarrow {position: absolute;top: 50%;left: 50%;width: 18px;height: 18px;margin-left: -9px;margin-top: -5px;cursor: pointer;}
 .scrollarrow:hover polyline, .scrollarrow:focus polyline {stroke-width: 15;}
 .scrollarrow:active polyline {stroke-width: 15;transition: all 100ms ease-in-out;}  
