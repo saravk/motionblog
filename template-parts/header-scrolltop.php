@@ -1,3 +1,11 @@
+<?php
+/**
+ * The template for adding a ScrollTop button with AMP Animation
+ *
+ * @package MotionBlog
+ */
+?>
+
 <amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay">
   </amp-position-observer>
   <amp-animation id="showAnim" layout="nodisplay">

@@ -2,7 +2,7 @@
 /**
  * The template for displaying blog posts with pagination and sidebar
  *
- * @package Neblue
+ * @package MotionBlog
  */
 ?>
 

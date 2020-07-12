@@ -573,7 +573,7 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 .wp-block-image.alignwide, .wp-block-gallery.alignwide, .wp-block-cover.alignwide {max-width: 1200px;margin: 30px auto;}
 .wp-block-image.alignfull, .wp-block-gallery.alignfull, .wp-block-cover.alignfull {max-width: 100%;margin: 40px auto;}
 .wp-block-cover {background-position: center;}
-.wp-block-gallery.nomargin .blocks-gallery-item{margin: 0;}
+.wp-block-gallery.nomargin .blocks-gallery-item, .wp-block-image.alignfull.nomargin, .wp-block-gallery.alignfull.nomargin{margin: 0;}
 
 .post-content {padding-top: 40px;}
 .post-content figcaption {color: #a8a6a1;font-size: 14px;text-align: center; margin: 0 auto;padding-bottom: 20px;}
@@ -622,8 +622,8 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 }
 
 .featured-slider-container {background: #f1f1f1;height: 450px;}
-.featured-slider-item {width: 350px;height:430px;background: #fff;margin: 10px 0 10px 10px;overflow: hidden;}
-.featured-slider-item amp-img {  object-fit: cover;width:350px;height:350px;}
+.featured-slider-item {width: 350px;height:430px;background: #f1f1f1;margin: 10px 0 10px 10px;overflow: hidden;}
+.featured-slider-item amp-img {  object-fit: cover;height:350px;}
 .featured-item-content {padding: 10px 20px;overflow: hidden;background: #000;}
 .featured-item-content h3 {margin: 5px 0;font-size: 1em;text-transform: uppercase;}
 .featured-item-content h3 a {color: #f1f1f1;}
@@ -641,9 +641,9 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 .wp-block-cover__inner-container h2 {display: inline-block;font-size: 3em;padding-bottom: 5px;border-bottom: 3px solid ;margin-bottom: 10px;}
 
 @media (max-width: 768px) {
-  .featured-slider-item {width: 100vw;position: relative;}
-  .featured-slider-item amp-img {width: 100vw;height: 100vw;}
-  .featured-item-content {position: absolute;bottom: 0;left: 0;width: 100vw;}
+  /*.featured-slider-item {width: 95vw;position: relative;}
+  .featured-slider-item amp-img {width: 95vw;height: 100vw;}
+  .featured-item-content {position: absolute;bottom: 0;left: 0;width: 95vw;}*/
   .panel-cover img, .panel-cover-header, .panel-cover-shade {height: 450px;}
   .panel-cover-header h1 {font-size: 40px;}
   .wp-block-cover__inner-container p {display: none;}

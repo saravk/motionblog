@@ -13,7 +13,7 @@ $featured = new WP_Query($args);
 //Need a minimum of 4 posts to show the featured slider in the home page
 if ($featured->found_posts >= 4 and $featured->have_posts()) {
 ?>
-  <amp-carousel class="featured-slider-container" id="featured-carousel" height="450px" layout="fixed-height" type="carousel">
+  <amp-carousel class="featured-slider-container" id="featured-carousel" height="450px" layout="fixed-height" type="carousel" >
 <?php     
     while($featured->have_posts()) {
       $featured->the_post();
