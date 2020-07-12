@@ -7,7 +7,7 @@
 
 
 //Get all the posts under the current category with the featured-checkbox set to yes
-$args = array('posts_per_page' => 5, 'post_type' => 'post', 'meta_key' => 'featured-checkbox', 'meta_value' => 'yes', 'cat' => get_query_var('cat'));
+$args = array('posts_per_page' => 8, 'post_type' => 'post', 'meta_key' => 'featured-checkbox', 'meta_value' => 'yes', 'cat' => get_query_var('cat'));
 $featured = new WP_Query($args);
 
 //Need a minimum of 4 posts to show the featured slider in the home page
