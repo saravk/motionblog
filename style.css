@@ -587,6 +587,7 @@ nav.pagination .page-numbers.current:hover {background: transparent;color: #111;
 .post-page .post-header, .post-content p, .post-prevnext, .page-author-container, .post-author-content, .post-comments, .post-content h2, .post-content h3 {max-width: 800px;margin-left: auto;margin-right:auto;display: block;}
 .post-content h2 {font-size: 2em;margin-bottom: 1em;text-transform: uppercase; }
 .post-content-text p {padding-bottom: 18px;font-size: 18px;line-height: 1.5em;}
+.post-content-text a {color: var(--color-link);}
 .post-page .post-header {padding-bottom: 20px;}
 .post-prevnext {padding: 30px 0;font-weight: bold;}
 .post-prevnext .prev {float: left;}
