@@ -364,14 +364,8 @@ html,body {min-height: 100%; }
 .zero-margin {margin: 0;}
 .zero-margin {margin: 0;}
 
-html {background-color: #fff;background-image: url("");background-position: top left;background-repeat: no-repeat;background-size: contain; }
-html:before {background-color: #000;display: none;opacity: calc(30 * 0.01); }
-html {position: relative; }
-html:before {content: '';height: 100%;left: 0;position: fixed;top: 0;width: 100%; }
-
 
 .site-wrap, .site-container {position: relative;width: 100%; }
-.site-header {position: relative; }
 .responsive-nav {display: none;opacity: 0;visibility: hidden; }
 .logo-image, .logo-secondary-image {width: 100%; }
 .social {font-size: 0; }
@@ -381,6 +375,7 @@ html:before {content: '';height: 100%;left: 0;position: fixed;top: 0;width: 100%
 .social li svg {vertical-align: middle; }
 .social a {display: block;text-align: center; }
 
+.site-header {display: -webkit-flex;display: flex;position: relative; -webkit-align-items: center;align-items: center;height: 120px;padding-bottom: 0px;padding-left: 2%;padding-right: 2%;padding-top: 0px;}
 .site-header nav ul li,.site-header nav .social, .site-header nav .social li {display: inline-block;vertical-align: middle; }
 .site-header nav ul li:first-child {padding-left: 0 !important; }
 .site-header nav ul li:last-child {padding-right: 0 !important; }
@@ -437,8 +432,6 @@ html:before {content: '';height: 100%;left: 0;position: fixed;top: 0;width: 100%
 .cookie-banner a {color: inherit;text-decoration: underline; }
 .cookie-banner .close-btn {position: absolute;right: 20px;top: 50%;transform: translateY(-50%);width: 16px; }
 
-.site-header {display: -webkit-flex;display: flex;position: fixed;right: 0;top: 0;width: 100%; }
-.site-header.on-scroll {transition: background-color 0.3s ease, box-shadow 0.3s ease; }
 
 .logo-wrap {flex: 1; }
 .logo-wrap {max-width: 100%;margin-left: auto;margin-right: auto;padding-bottom: 0px;padding-top: 0px;width: 30%; }
@@ -482,7 +475,6 @@ nav ul > li:first-of-type a {font-weight: 700;}
 
 
 .site-content {margin-left: 3%;margin-right: 3%;width: 94%; }
-.site-header {-webkit-align-items: center;align-items: center;height: 120px;padding-bottom: 0px;padding-left: 2%;padding-right: 2%;padding-top: 0px;position: relative;z-index: 3; }
 
 .header-placeholder {display: none; }
 .logo-image img {max-height: 120px; width: auto;}
